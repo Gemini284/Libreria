@@ -16,7 +16,7 @@ router.get('/new', (req,res) => {
 
 //Crea una ruta para el autor (por si tiene varios libros)
 router.post('/', (req, res) => {
-    res.send("Crear")
+    res.send(req.body.nombre)
 })
 
 module.exports = router
